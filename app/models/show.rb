@@ -10,5 +10,6 @@ class Show < ActiveRecord::Base
   end
   
   def self.least_popular_show
+    self.
 
 end
