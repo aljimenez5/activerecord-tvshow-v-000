@@ -8,6 +8,7 @@ class Show < ActiveRecord::Base
   def self.most_popular_show
     self.select(:name).where(self.highest_rating)  
   end
+  
   def self.lowest_rating
     self.minimum(:rating)
   end
